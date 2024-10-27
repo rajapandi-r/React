@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import { HeaderComponent } from './HeaderComponent';
-import { compose, pipe } from 'lodash/fp';
+import {  pipe } from 'lodash/fp';
 const user = {
    firstName: "John",
    lastName: "Doe",
@@ -20,6 +19,7 @@ const transform = pipe(trim,toLowerCase);
 console.log(transform(input));
 //likeMe();
 function App() {
+  console.log(user);
   return (
     <HeaderComponent name="Raja" age={35} isMarried={true} />
   );
